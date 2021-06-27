@@ -1,0 +1,35 @@
+{
+	"template" : {
+		"template-id" : "sample-template",
+		"version" : "1.00-0001",
+		"layouts" : [{
+			"id" : "layout1", "path" : "layout1.html",
+			"enter" : "dothis", "exit" : "dothat", "enter-page" : ["do1", "do2"]
+		},{
+			"id" : "layout2", "title" : "Some title", "path" : "layout2.html"
+		}],
+		"default-layout" : "layout1"
+	},
+
+	"content" : {
+		"pages" : [{
+			"slug" : "page1",
+			"title" : "Welcome Page",
+			"path" : "page1.html",
+			"welcome-page" : true
+		},{
+			"slug" : "page2",
+			"title" : "The Second Page",
+			"path" : "page2.html"
+		},{
+			"slug" : "page3",
+			"title" : "The Third Page",
+			"path" : "page3.html"
+		},{
+			"slug" : "notfound",
+			"title" : "Page Not Found",
+			"path" : "notfoundpage.html",
+			"404-page" : true
+		}]
+	}
+}

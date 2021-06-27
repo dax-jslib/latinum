@@ -1,0 +1,13 @@
+<project default="install" basedir=".." >
+	<property file="${user.home}/latinum.build.properties" />
+	<property file="buildenv/build.properties" />
+	<target name="install">
+		<echo>deploy dir: ${deploydir}</echo>
+
+		<delete dir="${deploydir}" failonerror="false" />
+		<copy todir="${deploydir}">
+			<fileset dir="lib" />
+		</copy>
+
+	</target>
+</project>

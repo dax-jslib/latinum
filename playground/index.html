@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="_description_">
+	<meta name="author" content="_author_">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="jquery/jquery-3.5.0.min.js" ></script>
+	<script type="module" src="../lib/latinum.mod.js"></script>
+</head>
+
+<body>
+
+	<span latinum-root></span>
+
+	<script>
+		window.addEventListener("LatinumLoaded", event => {
+			$latinum.enableLogging();
+			$latinum.setStore("plygrnd");
+
+			//$latinum.definition.XML.all("latinum.xml");
+			$latinum.definition.XML.template("latinum-template.xml");
+			$latinum.definition.XML.content("latinum-content.xml");
+
+			//$latinum.definition.JSON.all("latinum.json");
+			//$latinum.definitions.JSON.layouts("layouts.json");
+			//$latinum.definitions.JSON.pages("pages.json");
+			$latinum.init().then(function(){
+				console.log("all good");
+			}).catch(function(err) {
+				console.log("something has gone wrong");
+				console.log(err);
+			});
+		});
+	</script>
+</body>
+</html>

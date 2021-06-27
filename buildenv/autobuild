@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ant install
+
+workdir="$(pwd)/.."
+while inotifywait -r -e modify,create,delete $workdir
+do
+echo "change detected in $workdir"
+ant install
+done

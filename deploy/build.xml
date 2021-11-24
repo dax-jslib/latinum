@@ -1,5 +1,5 @@
 <project default="install" basedir=".." >
-	<property file="${user.home}/latinum.build.properties" />
+	<property file="${user.home}/buildconfigs/latinum/build.properties" />
 	<property file="buildenv/build.properties" />
 	<target name="install">
 		<echo>deploy dir: ${deploydir}</echo>

@@ -1,0 +1,15 @@
+{
+	"plugins" : [ "plugins/markdown" ],
+
+	"opts" : {
+		"destination" : "apidocs",
+		"recurse" : true,
+		"readme" : "README.md"
+	},
+
+	"templates" : {
+		"default" : {
+			"useLongNameInNav" : true
+		}
+	}
+}

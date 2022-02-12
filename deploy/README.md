@@ -35,7 +35,7 @@ $ ./autodeploy
 
 Unless specified, the library is copied into the subfolder named `remote-deploy/shared/latinum` under the current user's home directory. You can change this location by following these steps:
 
-Create a folder named `buildconfigs/latinum` under the current user's home directory.
+Create a folder named `work/buildconfigs/latinum` under the current user's home directory.
 
 Create a file named `build.properties` within the above subfolder.
 

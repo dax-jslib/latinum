@@ -4,8 +4,8 @@
 	<target name="install">
 		<echo>deploy dir: ${deploydir}</echo>
 
-		<delete dir="${deploydir}/latinum" failonerror="false" />
-		<copy todir="${deploydir}/latinum">
+		<delete dir="${deploydir}/shared/latinum" failonerror="false" />
+		<copy todir="${deploydir}/shared/latinum">
 			<fileset dir="lib" />
 		</copy>
 

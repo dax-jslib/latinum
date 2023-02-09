@@ -1,11 +1,11 @@
 <project default="install" basedir=".." >
-	<property file="${user.home}/work/buildconfigs/latinum/build.properties" />
+	<property file="${user.home}/buildconfigs/latinum/build.properties" />
 	<property file="deploy/build.properties" />
 	<target name="install">
 		<echo>deploy dir: ${deploydir}</echo>
 
-		<delete dir="${deploydir}/shared/latinum" failonerror="false" />
-		<copy todir="${deploydir}/shared/latinum">
+		<delete dir="${deploydir}/latinum" failonerror="false" />
+		<copy todir="${deploydir}/latinum">
 			<fileset dir="lib" />
 		</copy>
 
